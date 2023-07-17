@@ -1,0 +1,4 @@
+node_modules
+_static
+gemini-report
+app/buildInfo.js

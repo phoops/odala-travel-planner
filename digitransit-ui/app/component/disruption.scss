@@ -1,0 +1,41 @@
+.disruption-info .icon.disruption-info {
+  padding-left: 2vh;
+  width: 2em;
+  fill: $disruption-color;
+}
+
+.disruption-list-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .stop-tab-container {
+    flex: 0 0 auto;
+  }
+
+  .stop-tab-singletab {
+    background-color: white;
+    border-top-color: white;
+  }
+
+  .disruption-list-content {
+    flex: 1;
+    padding: 0 0.5em;
+
+    &.disruption-list-content__large {
+      padding: 0 1em;
+    }
+
+    h2 {
+      margin: $padding-medium $padding-small $padding-small $padding-small;
+    }
+
+    .route-alert-row + .route-alert-row {
+      border-top: none;
+    }
+
+    .route-number {
+      min-width: 48px;
+    }
+  }
+}

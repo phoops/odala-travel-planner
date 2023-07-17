@@ -1,0 +1,55 @@
+/* HSL theme */
+
+/* Base theme */
+@import '../default/theme';
+
+/* Operator palette */
+$mint-red: #DE243F;
+$mint-dark-red: #b3172e;
+$mint-yellow: #ffc324;
+$hsl-blue: #007ac9;
+$hsl-dark-blue: #0062a1;
+$hsl-pink: #f092cd;
+$hsl-alert: #dc0451;
+$hsl-tram-green: #00985f;
+$hsl-metro-orange: #ff6319;
+$hsl-rail-red: #8c4799;
+$hsl-ferry-blue: #00b9e4;
+$mint-dark: #35363A;
+$mint-light: #F2F2F2;
+
+/* Application palette */
+$primary-color: $mint-red;
+$secondary-color: $mint-dark-red;
+$favourite-color: $mint-yellow;
+$hilight-color: $mint-yellow;
+$action-color: $mint-red;
+$current-location-color: $hsl-tram-green;//#F653B9;
+
+$to-color: $mint-dark-red;
+
+/* Component palette */
+$standalone-btn-color: $primary-color;
+$standalone-btn-hover-color: $secondary-color;
+$standalone-btn-active-color: $secondary-color;
+$viewpoint-marker-color: $hsl-blue;
+$link-color: $primary-color;
+
+/* Vehicle palette */
+$airplane-color: #0046ad;
+$bus-color: $hsl-blue /*#FF9A02*/;
+$tram-color: $hsl-tram-green;
+$metro-color: $hsl-metro-orange;
+$rail-color: $hsl-rail-red/*$hsl-rail-red*/;
+$ferry-color: $hsl-ferry-blue;
+
+/* Fonts */
+$font-family: "Roboto","Gotham Rounded SSm A","Gotham Rounded SSm B", Arial, sans-serif;
+$font-weight-medium: 500;
+$letter-spacing: -0.025em;
+$font-size-medium-large: 1rem;
+
+$font-family-narrow: "Roboto Condensed","Gotham XNarrow SSm A","Gotham XNarrow SSm B", Arial, Georgia, sans-serif;
+
+/* Spinner */
+$spinner-image: url('mint-spinner.png');

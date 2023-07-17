@@ -1,0 +1,73 @@
+/* Theme */
+@import 'theme';
+
+@import '../../main';
+
+@import 'icon';
+
+.top-bar .navi-logo {
+    margin-left: 0;
+    width: 600px;
+    height: 60px;
+    min-width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: left center; */
+    cursor: pointer;
+    /* background: #FFF; */
+}
+
+.desktop-title {
+    background: $odala-light-blue;
+    color: $odala-blue;
+
+    a {
+        color: $odala-blue;
+    }
+    h1 {
+        color: $odala-blue;
+    }
+}
+
+.top-bar {
+    background: $odala-blue;
+    color: $odala-light-blue;
+}
+
+.top-bar.bp-large {
+    background: $odala-blue;
+ }
+
+ .external-link-container {
+    border: 1px solid rgba(76, 205, 241,0.70);
+    border-radius: 4px;
+}
+
+.navi-languages {
+    #lang-select {
+        color: $odala-light-blue;
+        .lang.selected {
+            color: $odala-blue;
+            background: $odala-light-blue;
+        }
+    }
+}
+
+.external-link-container a.external-link {
+    color: $odala-light-blue;
+}
+
+.long {
+    font-size: 14px;
+}
+
+.standalone-btn {
+}
+
+.navi-languages #lang-select .lang.selected {
+    color: $odala-blue;
+}
+
+input.react-autosuggest__input:focus {
+    outline: none;
+}

@@ -1,0 +1,53 @@
+/* Theme */
+@import 'theme';
+
+@import '../../main';
+
+@import 'icon';
+
+.top-bar .navi-logo {
+    margin-left: 0;
+    width: 600px;
+    height: 60px;
+    min-width: 130px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: left center; */
+    cursor: pointer;
+    /* background: #FFF; */
+}
+
+.desktop-title {
+    background: #515258;
+}
+
+.top-bar {
+    background: $mint-light;
+ }
+
+.top-bar.bp-large {
+    background: $mint-light;
+ }
+
+ .external-link-container {
+    border: 1px solid rgba(0, 0, 0, 0.70);
+    border-radius: 4px;
+}
+
+.navi-languages {
+    #lang-select {
+        color: #000000;
+        .lang.selected {
+            color: #FFFFFF;
+            background: $mint-red;
+        }
+    }
+}
+
+.external-link-container a.external-link {
+    color: #000000;
+}
+
+.long {
+    font-size: 14px;
+}

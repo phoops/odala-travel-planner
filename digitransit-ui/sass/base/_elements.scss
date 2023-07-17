@@ -1,0 +1,365 @@
+$border-radius-rounded: 30px;
+
+/* Card */
+.card {
+  background-color: $white;
+  border: 1px solid $light-gray;
+  border-radius: $border-radius;
+  margin-bottom: 5px;
+  line-height: $line-height-normal;
+  overflow-x: hidden;
+}
+.card-header {
+  background-color: $white;
+  padding: 0.4em 0 0.5em;
+
+  .card-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .card-header-wrapper {
+      flex-grow: 1;
+    }
+  }
+
+  .zone-icon-container {
+    align-items: center;
+    color: $primary-color;
+    display: flex;
+    font-size: $font-size-xxsmall;
+    font-weight: $font-weight-medium;
+    padding-bottom: $padding-small;
+
+    .icon {
+      display: block;
+      height: 2em;
+      margin-left: 0.5em;
+      width: 2em;
+    }
+  }
+
+  .h3 {
+    margin-top: -10px;
+  }
+  .card-sub-header {
+    p {
+      display: inline;
+    }
+    .card-code {
+      border: 1px solid $light-gray;
+      border-radius: $border-radius;
+      font-size: $font-size-xxsmall;
+      color: $gray-blue;
+      margin-right: 3px;
+      padding: 0px 2px 0px 2px;
+    }
+  }
+}
+
+/* buttons */
+.show-more {
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: $border-radius-rounded;
+  background: $gray-blue-light;
+  color: $white;
+  font-family: $font-family;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-small;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0;
+  &:hover,
+  &:focus {
+    background-color: $gray-blue-light;
+    outline: 0;
+  }
+}
+
+/* Modal */
+#app .modal {
+  border-radius: $border-radius;
+  cursor: auto;
+  height: 85%;
+  max-height: 85%;
+  padding: 0;
+
+  .modal-content {
+    height: 100%;
+    max-height: calc(100% - 5em);
+  }
+
+  .modal-top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+
+    h2 {
+      margin: $padding-xsmall 0;
+    }
+  }
+}
+
+/* ICONS */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+
+  &.caution {
+    color: $white;
+    fill: $disruption-color;
+  }
+
+  &.info {
+    color: $gray-blue;
+  }
+
+  &.inline-icon {
+    margin-left: $padding-xsmall;
+    position: relative;
+    top: 0.125em;
+  }
+}
+
+.favourite-icon {
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  .icon.favourite {
+    height: 24px;
+    width: 24px;
+    stroke: $medium-gray;
+    stroke-width: 50px;
+    fill: transparent;
+
+    &:hover {
+      stroke: $favourite-color;
+    }
+
+    &.selected {
+      fill: $favourite-color;
+      stroke: $background-color;
+    }
+
+    &.selected:hover {
+      stroke: $light-gray;
+    }
+  }
+}
+.fullscreen-toggle {
+  position: absolute;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 34px;
+  top: -3em;
+  right: 10px;
+  font-size: 17px;
+  border-radius: $border-radius;
+  z-index: index($zindex, map-fullscreen-toggle);
+  .icon {
+    margin: 0.5em 0.5em 0 0.5em;
+    fill: rgb(255, 255, 255);
+  }
+  &.expanded {
+    top: -3em;
+  }
+  &.routePage,
+  &.stopPage {
+    bottom: 0.7em;
+    top: auto;
+    &.expanded {
+      bottom: 0.5em;
+      top: auto;
+    }
+  }
+}
+
+.smallscreen-toggle {
+  @extend .fullscreen-toggle;
+  bottom: -1px;
+}
+
+.prefix-icon {
+  margin-right: 6px;
+}
+
+.dotted-link {
+  border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+}
+
+.overflow-fade {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to left,
+    transparent,
+    rgba(0, 0, 0, 0.2) 5px,
+    rgba(0, 0, 0, 1) 25px,
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.overflow-fade-left {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.2) 5px,
+    rgba(0, 0, 0, 1) 25px,
+    rgba(0, 0, 0, 1)
+  );
+}
+
+.double-overflow-fade {
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.2) 2%,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 0.2) 98%
+  );
+}
+
+@keyframes realtimeInnerArch {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes realtimeOuterArch {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+svg.realtime-icon {
+  transform: translate3d(0, 0, 0);
+}
+
+#icon-icon_realtime {
+  color: $realtime-color;
+}
+
+#icon-icon_realtime path {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
+  fill: currentColor;
+
+  &.path1 {
+    animation-name: realtimeInnerArch;
+  }
+
+  &.path2 {
+    animation-name: realtimeOuterArch;
+  }
+}
+
+@keyframes locationIcon {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  75% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+.icon-badge {
+  display: inline-block;
+  height: 1em;
+  position: absolute;
+  width: 1em;
+
+  > .badge-circle {
+    stroke: #fff;
+    stroke-width: 0;
+  }
+
+  > .badge-text {
+    fill: #fff;
+    font-family: $font-family;
+    font-size: 2rem;
+    font-weight: 500;
+    text-anchor: middle;
+
+    &.long {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// TODO: These are styles for the disabled position marker.
+
+// .paused {
+//   animation-play-state: paused;
+// }
+//
+// #icon-icon_mapMarker-location-animated circle {
+//   animation-duration: 2.4s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+//   transform-origin: center;
+//
+//   &#circle_pink_first {
+//     animation-name: locationIcon;
+//     animation-delay: -1.8s;
+//   }
+//
+//   &#circle_pink_second {
+//     animation-name: locationIcon;
+//     animation-delay: -1.2s;
+//   }
+//
+//   &#circle_pink_third {
+//     animation-name: locationIcon;
+//     animation-delay: -0.6s;
+//   }
+//
+//   &#circle_pink_fourth {
+//     animation-name: locationIcon;
+//     animation-delay: 0s;
+//   }
+// }
