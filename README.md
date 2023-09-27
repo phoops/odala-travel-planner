@@ -1,4 +1,3 @@
-# License
 ## License
 
 for the ODALA project.
