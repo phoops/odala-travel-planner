@@ -1,10 +1,4 @@
-**NOTE!** this project is intended to be run from GitLab - hence the -gitlab-ci.yml. See the gitlab-ci file to understand what is needed; for example variables and secrets are picked up from GitLab CI/CD variables.
-
-Components- Loki-Stack
-
-for the ODALA project.
-
-© 2022 Contrasec Oy
+# License
 
 [License EUPL 1.2](https://eupl.eu/1.2/en/)
 
